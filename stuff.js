@@ -2,7 +2,7 @@ initSolver2x2();
 var timeArray = [];
 var scrambleArray = [];
 
-document.title = "still no name";
+document.title = "clean timer";
 function update_bg() {
 	addX = (window.innerWidth/2 - event.clientX)/16;
 	addY = (window.innerHeight/2 - event.clientY)/16;
