@@ -142,7 +142,7 @@ body {
 	font-size: 32px;
 	background-color: black;
 }
-@font-face { font-family: twcenmt; src: url('twcenmt.ttf'); }
+@font-face { font-family: twcenmt; src: url('twcenmt.TTF'); }
 * {white-space: nowrap;}
 *::selection {background: rgba(255, 255, 255, 0.5);}
 br {user-select: none;}
