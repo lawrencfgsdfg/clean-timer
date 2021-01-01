@@ -1,0 +1,148 @@
+#bg {
+	background: url('smoov.png');
+	background-position: 50% 50%;
+	width: 100%;
+	height: 100vh;
+	filter: blur(15px);
+	opacity: 0.8;
+	transform:scale(1.1);
+}
+
+#main {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 40%;
+	height: 40%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 25px;
+}
+@keyframes line {
+	0% {
+		background: rgba(0, 0, 0, 0.3) linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) no-repeat center/2px 0%;
+	} 100% {
+		background: rgba(0, 0, 0, 0.3) linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) no-repeat center/2px 90%;
+	}
+}
+@keyframes undo-line {
+	0% {
+		background: rgba(0, 0, 0, 0.3) linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) no-repeat center/2px 90%;
+	} 100% {
+		background: rgba(0, 0, 0, 0.3) linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) no-repeat center/2px 0%;
+	}
+}
+
+#scramble {
+	display: block; 
+	cursor: pointer;
+	position: absolute;
+	bottom: 80%;
+	left: 50%;
+	transform: translate(-50%);
+	transition: visibility 0s, opacity 0.2s, font-size 0.5s;
+	opacity: 1;
+}
+#scramble:hover {font-size: 38px;}
+
+#options {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	user-select: none;
+	transform: translate(-50%);
+	opacity: 0;
+	transition: visibility 0s, opacity 0.2s;
+}
+
+#time {
+	font-size: 96px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: font-size 0.5s; 
+}
+
+a {
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	transition: font-size 0.5s, color 0.3s;
+	font-size: 32px;
+}
+a:hover {font-size: 48px;}
+
+#right {
+	position: absolute;
+	left: calc(50% + 20px);
+	top: 10%;
+	width: calc(50% - 30px);
+	height: 85%;
+	overflow-y: auto;
+	font-size: 24px;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.2s;
+} /* filter:blur(2px); */
+
+#timer {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: 500ms ease;
+}
+
+#info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: auto;
+	font-size: 20px;
+	padding-left: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 0px 5px 0px 0px;
+	cursor: pointer;
+}
+
+span.DNF {color:#F88;}
+span.plusTwo {color:#FF8;}
+
+/* global stuff */
+
+/* W3 schools skidded */
+/* width */
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.3); 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.5); 
+}
+::-webkit-scrollbar-thumb:active {
+	background: rgba(0, 0, 0, 0.6); 
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: twcenmt;
+	color: white;
+	font-size: 32px;
+	background-color: black;
+}
+@font-face { font-family: twcenmt; src: url('twcenmt.ttf'); }
+* {white-space: nowrap;}
+*::selection {background: rgba(255, 255, 255, 0.5);}
+br {user-select: none;}

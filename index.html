@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html onmousemove="update_bg()">
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="text/javascript" src="solver2x2.js"></script>
+<script type="text/javascript" src="stuff.js"></script>
+
+<div id='bg' z-index='0'></div>
+
+<div id='main' z-index='1' oncontextmenu='return false;'>
+	<div id='timer'>
+		<span id='scramble' title='click to copy' onclick='copyScramble();'>...</span>
+		<span id='time'>ready</span>
+		<span id='options'>
+			<a onclick='plusTwo()' id='plusTwo'>+2</a>&nbsp;&nbsp;&nbsp;
+			<a onclick='dnf()' id='dnf'>DNF</a>
+		</span>
+	</div>
+	<div id='right'></div>
+</div>
+<div id='info' onclick="window.open('https://github.com/lawrencfgsdfg/clean-timer')">clean timer v0.1</div>
+
+</html>
