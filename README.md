@@ -14,3 +14,4 @@ to do:
 * add timestamps to solves
 * add importing for you nerds that archive times
 * solve backwards compatibility... somehow
+* inspection time
